@@ -1,75 +1,49 @@
-# ai_image_classification
-This repository contains a Streamlit-based web application for image classification using pre-trained deep learning models. The app allows users to upload images and get predictions along with confidence scores. It is designed to be simple, interactive, and user-friendly, providing real-time classification results.
+# Implementation-of-ML-model-for-image-classification
+Implementation-of-ML-model-for-image-classification is a Streamlit app that integrates MobileNetV2 and a CIFAR-10 model for image classification. Users can upload images and receive predictions with confidence scores from either model. It features a sleek navigation bar for easy switching and real-time results, which is ideal for learning and practical use.
 
-Features
-Model Selection:
-Supports multiple pre-trained models:
-CIFAR-10 Classification Model
-MobileNetV2 (ImageNet)
-Image Upload:
-Accepts images in common formats like JPG, PNG, and JPEG.
-File size limit: 200MB.
-Real-time Predictions:
-Displays the predicted class and its confidence score for the uploaded image.
-Interactive Interface:
-Built using Streamlit, providing a modern and responsive UI.
-Ease of Deployment:
-Can be deployed on local systems or cloud platforms.
-How It Works
-Choose a Model: Select the desired pre-trained model from the sidebar.
-Upload an Image: Drag and drop an image or use the file browser to upload.
-View Results: The app processes the image and displays:
-Predicted class.
-Confidence score.
-Uploaded image preview.
-Models Included:
-CIFAR-10: Designed for 10-class image classification tasks such as airplanes, horses, cars, etc.
-MobileNetV2 (ImageNet): Efficient deep learning model pre-trained on the ImageNet dataset for classifying a wide range of objects.
-Tech Stack
-Frontend: Streamlit (Python)
-Backend: Pre-trained deep learning models using TensorFlow/Keras or PyTorch.
-Deployment: Designed for local or cloud deployment.
-Other Libraries:
-NumPy
-Pandas
-PIL (for image processing)
-Streamlit components
-Installation and Usage
-Follow these steps to get the project up and running on your local machine:
+## Key Features
 
-1. Clone the Repository
-bash
-Copy code
-git clone https://github.com/your-username/image-classification-webapp.git
-cd image-classification-webapp
-2. Install Dependencies
-Create a virtual environment (optional but recommended) and install the necessary dependencies:
+- **Dual Model Support**:
+  - **MobileNetV2 (ImageNet)**: Recognizes 1,000 different classes from the ImageNet dataset, including everyday objects, animals, and vehicles.
+  - **Custom CIFAR-10 Model**: Specializes in classifying images into one of ten specific categories such as airplanes, automobiles, and birds.
 
-bash
-Copy code
-pip install -r requirements.txt
-3. Run the Application
-Start the Streamlit app:
+- **Intuitive Interface**:
+  - **Navigation Bar**: Seamlessly switch between MobileNetV2 and CIFAR-10 models using a sleek sidebar menu.
+  - **Real-Time Classification**: Upload an image to receive immediate predictions with confidence scores.
 
-bash
-Copy code
-streamlit run app.py
-After running the command, open your browser and visit the URL provided by Streamlit (typically http://localhost:8501).
+- **Educational and Practical Use**:
+  - Ideal for learning about deep learning models and their performance.
+  - Useful for practical applications where image classification is needed.
 
-4. Upload an Image
-Select a model (CIFAR-10 or MobileNetV2).
-Upload an image to see the classification result along with confidence.
-Screenshots
-CIFAR-10 Classification
-Example of classifying an image of a horse with a confidence score.
+## Getting Started
 
-MobileNetV2 Classification
-Example of identifying an African elephant using MobileNetV2.
+### Prerequisites
 
-Planned Improvements
-Add more pre-trained models for classification.
-Integrate additional features like:
-Multiple image uploads.
-Model comparison.
-Deployment on cloud platforms (e.g., Heroku, AWS, or Google Cloud).
-Enhance the UI with custom themes.
+- Python 3.7 or later
+- A web browser
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/JayRathod341997/DeepLensX.git
+   cd Implementation-of-ML-model-for-image-classification
+2. **Create and activate a virtual environment**:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+3. **Install the required packages**:
+    ```bash
+    pip install -r requirements.txt
+4. **Start the Streamlit app**:
+    ```bash
+    streamlit run app.py
+5. **Open the app**: 
+    The app will open in your default web browser. If not, navigate to http://localhost:8501
+
+### Contributing
+  Feel free to fork the repository, open issues, or submit pull requests to contribute to the project.
+
+### Acknowledgements
+  - Streamlit
+  - TensorFlow
